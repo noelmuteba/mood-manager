@@ -1,0 +1,22 @@
+<div id="main-container" [formGroup]="moodForm">
+    <label>Select Mood</label>
+    <select formControlName="mood"  (change)="updateFormValue()" >
+      <option value="0">Happy</option>
+      <option value="1">Indifferent</option>
+      <option value="2">Sad</option>
+    </select> 
+
+  <p>Mood: {{ this.moodForm.get('mood').value | moodParser }}</p>
+
+
+  <div class="mood-graphic">
+    <img src="/assets/happy.svg" *ngIf="this.moodForm.get('mood').value === 0" alt="Happy Mood">
+    <img src="/assets/indifferent.svg" *ngIf="this.moodForm.get('mood').value === 1" alt="Indifferent Mood">
+    <img src="/assets/sad.svg" *ngIf="this.moodForm.get('mood').value === 2" alt="Sad Mood">
+  </div>
+
+  </div>
+
+
+
+  

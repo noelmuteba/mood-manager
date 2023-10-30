@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-size: x-large;
+    justify-content: space-evenly;
+  
+}
+
+h1{
+    text-align: center;
+  
+}
+
+button{
+    margin-top: 10%;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+  }
